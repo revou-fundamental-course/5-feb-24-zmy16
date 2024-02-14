@@ -1,31 +1,38 @@
 <!DOCTYPE html>
 <html lang="id">
+
 <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Konverter Suhu</title>
-    <link rel="stylesheet" href="css/style.css">
+    <link rel="stylesheet" href="css/style.css" />
 </head>
+
 <body>
+    <div class="converter-container">
+        <h2>Konverter Suhu</h2>
 
-<div class="converter-container">
-    <h2>Konverter Suhu</h2>
+        <label for="celsius">Celsius (°C):</label>
+        <input type="number" id="celsius" />
 
-    <label for="celsius">Celsius (°C):</label>
-    <input type="number" id="celsius">
+        <label for="fahrenheit">Fahrenheit (°F):</label>
+        <input type="number" id="fahrenheit" />
 
-    <label for="fahrenheit">Fahrenheit (°F):</label>
-    <input type="number" id="fahrenheit">
+        <button onclick="convertToFahrenheit()" class="button">
+            Konversi ke Fahrenheit
+        </button>
+        <button onclick="convertToCelsius()" class="button">
+            Konversi ke Celsius
+        </button>
+        <button onclick="reset()" class="button">Reset</button>
 
-    <button onclick="convertToFahrenheit()">Konversi ke Fahrenheit</button>
-    <button onclick="convertToCelsius()">Konversi ke Celsius</button>
-    <button onclick="reset()">Reset</button>
-    
-    <p><strong><u>Cara Menghitung</u></strong></p>
-    <p id='formula'></p>
-</div>
+        <p>
+            <strong><u>Cara Menghitung</u></strong>
+        </p>
+        <p id="formula"></p>
+    </div>
 
-<script src='js/main.js'></script>
-
+    <script src="js/main.js"></script>
 </body>
+
 </html>
