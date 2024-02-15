@@ -5,6 +5,7 @@ body {
   align-items: center;
   height: 100vh;
   background-color: #272829;
+  color: white;
 }
 
 .converter-container {
@@ -13,9 +14,6 @@ body {
   background-color: #61677a;
 }
 
-.converter-container h2, label {
-  color: white;
-}
 
 .button {
   padding: 5px;
